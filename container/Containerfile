@@ -1,2 +1,7 @@
+MAINTAINER cohen@matthewbriancohen.com
 FROM registry.access.redhat.com/ubi9
-COPY index.html /var/www/html/index.html
+COPY ./index.html /var/www/html/index.html
+COPY ./style.css /var/www/html/style.css
+RUN dnf install httpd -y
+EXPOSE 80
+CMD /usr/sbin/httpd -D FOREGROUND

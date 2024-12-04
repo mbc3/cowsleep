@@ -1,0 +1,11 @@
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: x-large;
+}
+
+p {
+    text-align: left;
+    text-transform: lowercase;
+    font-size: medium;
+}
